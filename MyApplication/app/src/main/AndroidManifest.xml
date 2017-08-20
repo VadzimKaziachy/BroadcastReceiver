@@ -15,16 +15,15 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <intent-filter>
-                <action android:name="ru.alexanderklimov.action.CAT" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="BROADCAST_ACTION"/>
-
-                <category android:name="ru.startandroid.develop.p0961servicebackbroadcast"/>
-            </intent-filter>
-
         </activity>
+<!--регестрируем сервис-->
+        <service android:name=".MyService"/>
+        <receiver android:name=".Brokast" >
+            <intent-filter>
+                <!--прописывае фильт-->
+                <action android:name="potigpoppgitr"/>
+            </intent-filter>
+            </receiver>
 
 
     </application>
